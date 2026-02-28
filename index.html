@@ -1,0 +1,2002 @@
+html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCSDVV9MMJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZCSDVV9MMJ');
+    </script>
+
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Awesome Instruction Editing</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=3)">
+
+    <link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable/sortable.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable/sortable.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function countRows() {
+            var noRows = document.getElementById("publicationList").rows.length;
+            document.getElementById("totalRows").innerHTML = "Total number of rows: " + (noRows - 1);
+        }
+
+        window.addEventListener('load', function () {
+            const el = document.getElementById('year')
+            if (el) {
+                el.click()
+            }
+        })
+    </script>
+
+    <style>
+        <!--
+        li.MsoNormal {
+            mso-style-parent: "";
+            margin-bottom: .0001pt;
+            font-size: 12.0pt;
+            font-family: "Times New Roman";
+            margin-left: 0in;
+            margin-right: 0in;
+            margin-top: 0in
+        }
+        -->
+    </style>
+
+</head>
+
+<BODY BGCOLOR=#FFFFFF background="images/bg.gif" LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0
+    onload="countRows()">
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center">
+                <table width="800" bgcolor="#FFFFFF">
+                    <tr>
+                        <td width="20"></td>
+                        <td align="center" valign="top" width="750">
+                            <table width="750" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                <tr>
+                                    <td class="mytitle">A Survey of Instruction-Guided Image Editing</td>
+                                </tr>
+                                <tr>
+                                    <td class="subject" style="padding-top:0px; color: #000;">
+                                        <b>Awesome Instruction Editing</b>
+                                    </td>
+                                </tr>
+                                <tr bgcolor="#FF0000">
+                                    <td height="1px" style="padding:2px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle" style="padding-top:25px">
+                                        I. Introduction
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="body">
+                                        Instruction-guided image editing is a rapidly evolving field allowing users to
+                                        modify specific regions of an image using diverse instructions, ranging from
+                                        text to multi-modal prompts. This survey provides a unified perspective and
+                                        comprehensive taxonomy of instruction-guided image editing, covering core topics
+                                        across applications, learning paradigms, and model architectures. This website
+                                        offers a sorted compilation of academic articles, datasets, bounding methodology
+                                        and techniques for instruction editing.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="center" src="images/fig-overview-pipeline.png" alt=""
+                                            border=0></img>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle">
+                                        II. List of Approaches (Sortable)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="body" id="totalRows">Total number of rows: 161</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table id="publicationList" class="sortable" style="padding-left:25px">
+                                            <thead>
+                                                <tr>
+                                                    <th class=""><span>Title</span></th>
+                                                    <th class="">Venue</th>
+                                                    <th class="" id="year">Year</th>
+                                                    <th class="">Code</th>
+                                                    <th class="">Features</th>
+                                                    <th class="">Category</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- TABLE_CONTENT_START -->
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=MBiMt3wp8M">Dragging
+                                                            with Geometry: From Pixels to Geometry-Guided Image
+                                                            Editing</a></td>
+                                                    <td>ICML</td>
+                                                    <td>2026</td>
+                                                    <td><a href="https://github.com/xinyu-pu/GeoDrag">[Code]</a></td>
+                                                    <td>interactive point-based image editing, geometry-guided dragging,
+                                                        3D cues</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=uGaR7L3Z1E">Follow-Your-Shape:
+                                                            Shape-Aware Image Editing via Trajectory-Guided Region
+                                                            Control</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2026</td>
+                                                    <td><a
+                                                            href="https://github.com/mayuelala/FollowYourShape">[Code]</a>
+                                                    </td>
+                                                    <td>shape-aware image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3757377.3763923">UTDesign:
+                                                            A Unified Framework for Stylized Text Editing and Generation
+                                                            in Graphic Design Images</a></td>
+                                                    <td>SIGGRAPH Asia</td>
+                                                    <td>2025</td>
+                                                    <td><a href="https://github.com/ZYM-PKU/UTDesign">[Code]</a></td>
+                                                    <td>stylized text editing and generation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=vhzqdxuSB3">EditInfinity:
+                                                            Image Editing with Binary-Quantized Generative Models</a>
+                                                    </td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2025</td>
+                                                    <td><a href="https://github.com/yx-chen-ust/EditInfinity">[Code]</a>
+                                                    </td>
+                                                    <td>text-driven image editing, binary-quantized generative models
+                                                    </td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3746027.3755429">Prompt-Softbox-Prompt:
+                                                            A Free-Text Embedding Control for Image Editing</a></td>
+                                                    <td>MM</td>
+                                                    <td>2025</td>
+                                                    <td><a href="https://github.com/yangyt46/PSP">[Code]</a></td>
+                                                    <td>free-text embedding control</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2501.03631">Exploring Optimal
+                                                            Latent Trajetory for Zero-shot Image Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>zero-shot image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2501.08225">FramePainter:
+                                                            Endowing Interactive Image Editing with Video Diffusion
+                                                            Priors</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>interactive image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2503.04215">Energy-Guided
+                                                            Optimization for Personalized Image Editing with Pretrained
+                                                            Text-to-Image Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>personalized image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.13490">Early Timestep
+                                                            Zero-Shot Candidate Selection for Instruction-Guided Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>instruction-guided image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2502.04050">PartEdit:
+                                                            Fine-Grained Image Editing using Pre-Trained Diffusion
+                                                            Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>Fine-Grained Image Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2507.04584">S2Edit: Text-Guided
+                                                            Image Editing with Precise Semantic and Spatial Control</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>text guided image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.18989">REED-VAE: RE-Encode
+                                                            Decode Training for Iterative Image Editing with Diffusion
+                                                            Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>iterative image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2506.20155">Towards Efficient
+                                                            Exemplar Based Image Editing with Multimodal VLMs</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>exemplar-based image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2507.01496">ReFlex: Text-Guided
+                                                            Editing of Real Images in Rectified Flow via Mid-Step
+                                                            Feature Extraction and Attention Adaptation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>text-guided image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2503.11054">LUSD: Localized
+                                                            Update Score Distillation for Text-Guided Image Editing</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>text-guided image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=S1RKWSyZ2Y">Guiding
+                                                            Instruction-based Image Editing via Multimodal Large
+                                                            Language Models</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://mllm-ie.github.io/">[Code]</a></td>
+                                                    <td>LLM-guided, Diffusion, Concise instruction loss, Supervised
+                                                        fine-tuning</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2303.09618">Hive: Harnessing
+                                                            human feedback for instructional visual editing</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://shugerdou.github.io/hive/">[Code]</a></td>
+                                                    <td>RLHF, Diffusion, Data augmentation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.18660">InstructBrush:
+                                                            Learning Attention-based Instruction Optimization for Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://royzhao926.github.io/InstructBrush/">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, Attention-based</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.18605">FlexEdit: Flexible
+                                                            and Controllable Diffusion-based Object-centric Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://flex-edit.github.io/">[Code]</a></td>
+                                                    <td>Controllable diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.08004">Pix2Pix-OnTheFly:
+                                                            Leveraging LLMs for Instruction-Guided Image Editing</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/pix2pixzero/pix2pix-zero">[Code]</a>
+                                                    </td>
+                                                    <td>on-the-fly, tuning-free, training-free</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.11568">EffiVED:Efficient
+                                                            Video Editing via Text-instruction Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/alibaba/EffiVED">[Code]</a></td>
+                                                    <td>Video editing, decoupled classifier-free</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://ieeexplore.ieee.org/abstract/document/10446377?casa_token=MC0if_Usl14AAAAA:UDH2NgPvWRYaaM0z_XOYFHxE_FQEIW2zHhw-k3AK6eKCMjEl6i2eESPi15qL0kZV6SgjM3Mp_8c">Grounded-Instruct-Pix2Pix:
+                                                            Improving Instruction Based Image Editing with Automatic
+                                                            Target Grounding</a></td>
+                                                    <td>ICASSP</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/arthur-71/Grounded-Instruct-Pix2Pix">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, mask generation image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://ojs.aaai.org/index.php/AAAI/article/view/28885">TexFit:
+                                                            Text-Driven Fashion Image Editing with Diffusion Models</a>
+                                                    </td>
+                                                    <td>AAAI</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://texfit.github.io/">[Code]</a></td>
+                                                    <td>Fashion editing, region locaation, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.05018">InstructGIE: Towards
+                                                            Generalizable Image Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/cr8br0ze/InstructGIE-Code">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, context matching</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.04880">An Item is Worth a
+                                                            Prompt: Versatile Image Editing with Disentangled
+                                                            Control</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/asFeng/d-edit">[Code]</a></td>
+                                                    <td>Freestyle, Diffusion, Group attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2311.16432">Text-Driven Image
+                                                            Editing via Learnable Regions</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://yuanze-lin.me/LearnableRegions_page/">[Code]</a>
+                                                    </td>
+                                                    <td>Region generation, diffusion, mask-free</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.00209">ChartReformer:
+                                                            Natural Language-Driven Chart Image Editing</a></td>
+                                                    <td>ICDAR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/pengyu965/ChartReformer">[Code]</a>
+                                                    </td>
+                                                    <td>chart editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2403.19645">GANTASTIC: GAN-based
+                                                            Transfer of Interpretable Directions for Disentangled Image
+                                                            Editing in Text-to-Image Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://gantastic.github.io/">[Code]</a></td>
+                                                    <td>Hybrid, direction transfer</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2404.12154">StyleBooth: Image
+                                                            Style Editing with Multimodal Instruction</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://ali-vilab.github.io/stylebooth-page/">[Code]</a>
+                                                    </td>
+                                                    <td>style editing, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.16794">ZONE: Zero-Shot
+                                                            Instruction-Guided Local Editing</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/lsl001006/ZONE">[Code]</a></td>
+                                                    <td>Local editing, localisation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.04965">Inversion-Free Image
+                                                            Editing with Natural Language</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://sled-group.github.io/InfEdit/">[Code]</a></td>
+                                                    <td>Consistent models, unified attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.10113">Focus on Your
+                                                            Instruction: Fine-grained and Multi-instruction Image
+                                                            Editing by Attention Modulation</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/guoqincode/Focus-on-Your-Instruction">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, multi-instruction</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2309.04372">MoEController:
+                                                            Instruction-based Arbitrary Image Manipulation with
+                                                            Mixture-of-Expert Controllers</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://oppo-mente-lab.github.io/moe_controller/">[Code]</a>
+                                                    </td>
+                                                    <td>MoE, LLM-powered</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=Nu9mOSq7eH">InstructCV:
+                                                            Instruction-Tuned Text-to-Image Diffusion Models as Vision
+                                                            Generalists</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/AlaaLab/InstructCV">[Code]</a></td>
+                                                    <td>Diffusion, LLM-based, classifier-free</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/WACV2024/html/Joseph_Iterative_Multi-Granular_Image_Editing_Using_Diffusion_Models_WACV_2024_paper.html">Iterative
+                                                            Multi-Granular Image Editing Using Diffusion Models</a></td>
+                                                    <td>WACV</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Diffusion, Iterative editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/5321b1dabcd2be188d796c21b733e8c7-Abstract-Conference.html">Dynamic
+                                                            Prompt Learning: Addressing Cross-Attention Leakage for
+                                                            Text-Based Image Editing</a></td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/wangkai930418/DPL">[Code]</a></td>
+                                                    <td>Diffusion, dynamic prompt</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=dpcVXiMlcv">Object-Aware
+                                                            Inversion and Reassembly for Image Editing</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://aim-uofa.github.io/OIR-Diffusion/">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, multi-object</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2303.17599">Zero-Shot Video
+                                                            Editing Using Off-The-Shelf Image Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/baaivision/vid2vid-zero">[Code]</a>
+                                                    </td>
+                                                    <td>video editing, zero-shot</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2024/html/Liu_Video-P2P_Video_Editing_with_Cross-attention_Control_CVPR_2024_paper.html">Video-P2P:
+                                                            Video Editing with Cross-attention Control</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://video-p2p.github.io/">[Code]</a></td>
+                                                    <td>Decoupled-guidance attention control, video editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2404.19204">NeRF-Insert: 3D Local
+                                                            Editing with Multimodal Control Signals</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>3D Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2404.17672">BlenderAlchemy:
+                                                            Editing 3D Graphics with Vision-Language Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://ianhuang0630.github.io/BlenderAlchemyWeb/">[Code]</a>
+                                                    </td>
+                                                    <td>3D Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2404.16581">AudioScenic:
+                                                            Audio-Driven Video Scene Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>audio-based instruction</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.01496">LocInv:
+                                                            Localization-aware Inversion for Text-Guided Image
+                                                            Editing</a></td>
+                                                    <td>CVPR-AI4CC</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/wangkai930418/DPL">[Code]</a></td>
+                                                    <td>Localization-aware inversion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.00878">SonicDiffusion:
+                                                            Audio-Driven Image Generation and Editing with Pretrained
+                                                            Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://cyberiada.github.io/SonicDiffusion/">[Code]</a>
+                                                    </td>
+                                                    <td>Audio-driven</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.05769">Exploring Text-Guided
+                                                            Single Image Editing for Remote Sensing Images</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/HIT-PhilipHan/remote_sensing_image_editing">[Code]</a>
+                                                    </td>
+                                                    <td>Remote sensing images</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.07472">GaussianVTON: 3D
+                                                            Human Virtual Try-ON via Multi-Stage Gaussian Splatting
+                                                            Editing with Image Prompting</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://haroldchen19.github.io/gsvton/">[Code]</a></td>
+                                                    <td>Fashion editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.16803">TIE: Revolutionizing
+                                                            Text-based Image Editing for Complex-Prompt Following and
+                                                            High-Fidelity Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Chain of thought</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.16823">Unified Editing of
+                                                            Panorama, 3D Scenes, and Videos Through Disentangled
+                                                            Self-Attention Injection</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://unifyediting.github.io/">[Code]</a></td>
+                                                    <td>Diffusion, Self-attention Injection</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.18386">Instruct-MusicGen:
+                                                            Unlocking Text-to-Music Editing for Music Language Models
+                                                            via Instruction Tuning</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/ldzhangyx/instruct-musicgen">[Code]</a>
+                                                    </td>
+                                                    <td>Music editing, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.19708">Text Guided Image
+                                                            Editing with Automatic Concept Locating and Forgetting</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Diffusion, concept forgetting</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2409.18071">FreeEdit: Mask-free
+                                                            Reference-based Image Editing with Multi-modal
+                                                            Instruction</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/hrz2000/FreeEdit">[Code]</a></td>
+                                                    <td>Diffusion, instruction-driven editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.04965">Revealing Directions
+                                                            for Text-guided 3D Face Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Text-guided 3D face editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.10496">Vision-guided and
+                                                            Mask-enhanced Adaptive Denoising for Prompt-based Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Text-to-image, editing, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.21703">Hyper-parameter
+                                                            tuning for text guided image editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/witcherofresearch/Forgedit/">[Code]</a>
+                                                    </td>
+                                                    <td>Text Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2411.07232">Add-it: Training-Free
+                                                            Object Insertion in Images With Pretrained Diffusion
+                                                            Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Text-guided Object Insertion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.02366">GenMix: Effective
+                                                            Data Augmentation with Generative Diffusion Model Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Diffusion image augmentation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.04301">SwiftEdit: Lightning
+                                                            Fast Text-Guided Image Editing via One-Step Diffusion</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Text-Guided Image Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.07517">FireFlow: Fast
+                                                            Inversion of Rectified Flow for Image Semantic Editing</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>semantic image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.09611">FluxSpace:
+                                                            Disentangled Semantic Editing in Rectified Flow
+                                                            Transformers</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>disentangled semantic editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.15216">UIP2P: Unsupervised
+                                                            Instruction-based Image Editing via Cycle Edit
+                                                            Consistency</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Instruction-based image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.13565">CA-Edit:
+                                                            Causality-Aware Condition Adapter for High-Fidelity Local
+                                                            Facial Attribute Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>facial attribute editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.12912">Unsupervised
+                                                            Region-Based Image Editing of Denoising Diffusion Models</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>region-based image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.21079">Edicho: Consistent
+                                                            Image Editing in the Wild</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>consistent image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.15216">UIP2P: Unsupervised
+                                                            Instruction-based Image Editing via Edit Reversibility
+                                                            Constraint</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>instruction-based image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html">InstructPix2Pix:
+                                                            Learning To Follow Image Editing Instruction</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://www.timothybrooks.com/instruct-pix2pix">[Code]</a>
+                                                    </td>
+                                                    <td>Core paper, Diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/1e75f7539cbde5de895fab238ff42519-Abstract-Conference.html">Visual
+                                                            Instruction Inversion: Image Editing via Image Prompting</a>
+                                                    </td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://thaoshibe.github.io/visii/">[Code]</a></td>
+                                                    <td>Diffusion, visual instruction</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2023/html/Haque_Instruct-NeRF2NeRF_Editing_3D_Scenes_with_Instructions_ICCV_2023_paper.html">Instruct-NeRF2NeRF:
+                                                            Editing 3D Scenes with Instructions</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://instruct-nerf2nerf.github.io/">[Code]</a></td>
+                                                    <td>3D scene editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2303.15780">Instruct 3D-to-3D:
+                                                            Text Instruction Guided 3D-to-3D conversion</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://sony.github.io/Instruct3Dto3D-doc/">[Code]</a>
+                                                    </td>
+                                                    <td>3D editing, Dynamic scaling</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2308.14360">InstructME: An
+                                                            Instruction Guided Music Edit And Remix Framework with
+                                                            Latent Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://musicedit.github.io/">[Code]</a></td>
+                                                    <td>Music editing, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2311.12066">EditShield:
+                                                            Protecting Unauthorized Image Editing by Instruction-guided
+                                                            Diffusion Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/Allen-piexl/Editshield">[Code]</a>
+                                                    </td>
+                                                    <td>authorized editing, diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.13834">Fairy: Fast
+                                                            Parallelized Instruction-Guided Video-to-Video Synthesis</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://fairy-video2video.github.io/">[Code]</a></td>
+                                                    <td>Video editing, cross-time attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/e1b619a9e241606a23eb21767f16cf81-Abstract-Conference.html">AUDIT:
+                                                            Audio Editing by Following Instructions with Latent
+                                                            Diffusion Models</a></td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://audit-demo.github.io/">[Code]</a></td>
+                                                    <td>Audio, Diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.06738">InstructAny2Pix:
+                                                            Flexible Visual Editing via Multimodal Instruction
+                                                            Following</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://github.com/jacklishufan/InstructAny2Pix">[Code]</a>
+                                                    </td>
+                                                    <td>Refinement prior, instrucitonal tuning</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://aclanthology.org/2023.findings-emnlp.646/">Learning
+                                                            to Follow Object-Centric Image Editing Instructions
+                                                            Faithfully</a></td>
+                                                    <td>EMNLP</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://github.com/tuhinjubcse/FaithfulEdits_EMNLP2023">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, additional supervision</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2023/html/Chai_StableVideo_Text-driven_Consistency-aware_Diffusion_Video_Editing_ICCV_2023_paper.html">StableVideo:
+                                                            Text-driven Consistency-aware Diffusion Video Editing</a>
+                                                    </td>
+                                                    <td>ICCV</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/rese1f/StableVideo">[Code]</a></td>
+                                                    <td>Diffusion, Video</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2023/html/Sella_Vox-E_Text-Guided_Voxel_Editing_of_3D_Objects_ICCV_2023_paper.html">Vox-E:
+                                                            Text-Guided Voxel Editing of 3D Objects</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://tau-vailab.github.io/Vox-E/">[Code]</a></td>
+                                                    <td>Diffusion, 3D</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://dl.acm.org/doi/abs/10.1145/3592451?casa_token=bP4wcwQMYtAAAAAA:pOEZ75vYUTT0vBV3ksAOSgXbHdbD8JFv4PQp56yVpuZ9brVDo8lB2Qozfy16Du9qVGfcG_u6j06B">Unitune:
+                                                            Text-driven image editing by fine tuning a diffusion model
+                                                            on a single image</a></td>
+                                                    <td>TOG</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/xuduo35/UniTune">[Code]</a></td>
+                                                    <td>Diffusion, fine-tuning</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2302.01329">Dreamix: Video
+                                                            Diffusion Models are General Video Editors</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://dreamix-video-editing.github.io/">[Code]</a>
+                                                    </td>
+                                                    <td>Cascaded diffusion, video</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2303.10073">Dialogpaint: A
+                                                            dialog-based image editing model</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td>-</td>
+                                                    <td>Dialog-based</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2305.05947">iEdit: Localised
+                                                            Text-guided Image Editing with Weak Supervision</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td>-</td>
+                                                    <td>Localized diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/98530736e5d94e62b689dfc1fda89bd1-Abstract-Conference.html">ImageBrush:
+                                                            Learning Visual In-Context Instructions for Exemplar-Based
+                                                            Image Manipulation</a></td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2023</td>
+                                                    <td>-</td>
+                                                    <td>Example-based instruction</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2023/papers/Mokady_NULL-Text_Inversion_for_Editing_Real_Images_Using_Guided_Diffusion_Models_CVPR_2023_paper.pdf">NULL-Text
+                                                            Inversion for Editing Real Images Using Guided Diffusion
+                                                            Models</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://null-text-inversion.github.io/">[Code]</a></td>
+                                                    <td>null-tex embedding, Diffusion, CLIP</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="http://openaccess.thecvf.com/content/CVPR2023/html/Kawar_Imagic_Text-Based_Real_Image_Editing_With_Diffusion_Models_CVPR_2023_paper.html">Imagic:
+                                                            Text-based real image editing with diffusion models</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://imagic-editing.github.io/">[Code]</a></td>
+                                                    <td>Diffusion, embedding interpolation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2309.05793">PhotoVerse:
+                                                            Tuning-Free Image Customization with Text-to-Image Diffusion
+                                                            Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://photoverse2d.github.io/">[Code]</a></td>
+                                                    <td>Diffusion, dual-branch concept</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2305.18047">InstructEdit:
+                                                            Improving Automatic Masks for Diffusion-based Image Editing
+                                                            With User Instructions</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://qianwangx.github.io/InstructEdit/">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, LLM-powered</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2309.03895">Instructdiffusion: A
+                                                            generalist modeling interface for vision tasks</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://gengzigang.github.io/instructdiffusion.github.io/">[Code]</a>
+                                                    </td>
+                                                    <td>Multi-task, multi-turn, Diffusion, LLM</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2311.10089">Emu Edit: Precise
+                                                            Image Editing via Recognition and Generation Tasks</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://emu-edit.metademolab.com/">[Code]</a></td>
+                                                    <td>Diffusion, multi-task, multi-turn</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.06739">SmartEdit: Exploring
+                                                            Complex Instruction-based Image Editing with Multimodal
+                                                            Large Language Models</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://yuzhou914.github.io/SmartEdit/">[Code]</a></td>
+                                                    <td>MLLM, Diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2305.14742">ChatFace: Chat-Guided
+                                                            Real Face Editing via Diffusion Latent Space
+                                                            Manipulation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://dongxuyue.github.io/chatface/">[Code]</a></td>
+                                                    <td>LLM, Diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2208.01626">Prompt-to-Prompt
+                                                            Image Editing with Cross Attention Control</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/google/prompt-to-prompt">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, Cross Attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://ojs.aaai.org/index.php/AAAI/article/view/25134">Target-Free
+                                                            Text-Guided Image Manipulation</a></td>
+                                                    <td>AAAI</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://sites.google.com/view/wancyuanfan/projects/cmanigan">[Code]</a>
+                                                    </td>
+                                                    <td>3D Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Paint_by_Example_Exemplar-Based_Image_Editing_With_Diffusion_Models_CVPR_2023_paper.html">Paint
+                                                            by example: Exemplar-based image editing with diffusion
+                                                            models</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a
+                                                            href="https://github.com/Fantasy-Studio/Paint-by-Example">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, example-based</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://ojs.aaai.org/index.php/AAAI/article/view/26189">De-net:
+                                                            Dynamic text-guided image editing adversarial networks</a>
+                                                    </td>
+                                                    <td>AAAI</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/tobran/DE-Net">[Code]</a></td>
+                                                    <td>GAN, multi-task</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Imagen_Editor_and_EditBench_Advancing_and_Evaluating_Text-Guided_Image_Inpainting_CVPR_2023_paper.html">Imagen
+                                                            editor and editbench: Advancing and evaluating text-guided
+                                                            image inpainting</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://imagen.research.google/editor/">[Code]</a></td>
+                                                    <td>Diffusion, benchmark, CLIP</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2023/html/Tumanyan_Plug-and-Play_Diffusion_Features_for_Text-Driven_Image-to-Image_Translation_CVPR_2023_paper.html">Plug-and-Play
+                                                            Diffusion Features for Text-Driven Image-to-Image
+                                                            Translation</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://pnp-diffusion.github.io/">[Code]</a></td>
+                                                    <td>Diffusion, feature injection</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2023/html/Cao_MasaCtrl_Tuning-Free_Mutual_Self-Attention_Control_for_Consistent_Image_Synthesis_and_ICCV_2023_paper.html">MasaCtrl:
+                                                            Tuning-Free Mutual Self-Attention Control for Consistent
+                                                            Image Synthesis and Editing</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2023</td>
+                                                    <td><a href="https://github.com/TencentARC/MasaCtrl">[Code]</a></td>
+                                                    <td>Diffusion, mutual self-attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2312.09256">LIME: Localized Image
+                                                            Editing via Attention Regularization in Diffusion Models</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2023</td>
+                                                    <td>-</td>
+                                                    <td>Localized image editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2210.02249">LDEdit: Towards
+                                                            Generalized Text Guided Image Manipulation via Latent
+                                                            Diffusion Models</a></td>
+                                                    <td>BMVC</td>
+                                                    <td>2022</td>
+                                                    <td>-</td>
+                                                    <td>latent diffusion</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://www.computer.org/csdl/proceedings-article/wacv/2022/091500d441/1B12HcraGYM">StyleMC:
+                                                            Multi-Channel Based Fast Text-Guided Image Generation and
+                                                            Manipulation</a></td>
+                                                    <td>WACV</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://catlab-team.github.io/stylemc/">[Code]</a></td>
+                                                    <td>GAN, CLIP</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2022/html/Avrahami_Blended_Diffusion_for_Text-Driven_Editing_of_Natural_Images_CVPR_2022_paper.html">Blended
+                                                            Diffusion for Text-Driven Editing of Natural Images</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://github.com/omriav/blended-diffusion">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, CLIP, Blend</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://link.springer.com/chapter/10.1007/978-3-031-19836-6_6">VQGAN-CLIP:
+                                                            Open Domain Image Generation and Editing with Natural
+                                                            Language Guidance</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://github.com/EleutherAI/vqgan-clip/">[Code]</a>
+                                                    </td>
+                                                    <td>GAN, CLIP</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/abs/10.1145/3528223.3530164">StyleGAN-NADA:
+                                                            CLIP-guided domain adaptation of image generators</a></td>
+                                                    <td>TOG</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://stylegan-nada.github.io/">[Code]</a></td>
+                                                    <td>GAN, CLIP</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2022/html/Kim_DiffusionCLIP_Text-Guided_Diffusion_Models_for_Robust_Image_Manipulation_CVPR_2022_paper.html">DiffusionCLIP:
+                                                            Text-Guided Diffusion Models for Robust Image
+                                                            Manipulation</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://github.com/gwang-kim/DiffusionCLIP">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, CLIP, Noise combination</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.mlr.press/v162/nichol22a/nichol22a.pdf">GLIDE:
+                                                            Towards Photorealistic Image Generation and Editing with
+                                                            Text-Guided Diffusion Models</a></td>
+                                                    <td>ICML</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://github.com/openai/glide-text2im">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, CLIP, Classifier-free guidance</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://openreview.net/forum?id=3lge0p5o-M-">DiffEdit:
+                                                            Diffusion-based semantic image editing with mask
+                                                            guidance</a></td>
+                                                    <td>ICLR</td>
+                                                    <td>2022</td>
+                                                    <td><a
+                                                            href="https://github.com/Xiang-cd/DiffEdit-stable-diffusion/">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, DDIM, Mask generation</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2022/html/Michel_Text2Mesh_Text-Driven_Neural_Stylization_for_Meshes_CVPR_2022_paper.html">Text2mesh:
+                                                            Text-driven neural stylization for meshes</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://threedle.github.io/text2mesh/">[Code]</a></td>
+                                                    <td>3D Editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/CVPR2022/html/Wang_ManiTrans_Entity-Level_Text-Guided_Image_Manipulation_via_Token-Wise_Semantic_Alignment_and_CVPR_2022_paper.html">Manitrans:
+                                                            Entity-level text-guided image manipulation via token-wise
+                                                            semantic alignment and generation</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://jawang19.github.io/manitrans/">[Code]</a></td>
+                                                    <td>GAN, multi-entities</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://link.springer.com/chapter/10.1007/978-3-031-19784-0_41">Text2live:
+                                                            Text-driven layered image and video editing</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2022</td>
+                                                    <td><a href="https://text2live.github.io/">[Code]</a></td>
+                                                    <td>GAN, CLIP, Video editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2202.07273">SPEECHPAINTER:
+                                                            TEXT-CONDITIONED SPEECH INPAINTING</a></td>
+                                                    <td>Interspeech</td>
+                                                    <td>2022</td>
+                                                    <td><a
+                                                            href="https://google-research.github.io/seanet/speechpainter/examples/">[Code]</a>
+                                                    </td>
+                                                    <td>Speech editing</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Talk-To-Edit_Fine-Grained_Facial_Editing_via_Dialog_ICCV_2021_paper.html">Talk-to-Edit:
+                                                            Fine-Grained Facial Editing via Dialog</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2021</td>
+                                                    <td><a href="https://www.mmlab-ntu.com/project/talkedit/">[Code]</a>
+                                                    </td>
+                                                    <td>GAN, dialog, semantic field</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content_CVPR_2020/html/Li_ManiGAN_Text-Guided_Image_Manipulation_CVPR_2020_paper.html">Manigan:
+                                                            Text-guided image manipulation</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2020</td>
+                                                    <td><a href="https://github.com/mrlibw/ManiGAN">[Code]</a></td>
+                                                    <td>GAN, affine combination</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://aclanthology.org/2020.emnlp-main.357/">SSCR:
+                                                            Iterative Language-Based Image Editing via Self-Supervised
+                                                            Counterfactual Reasoning</a></td>
+                                                    <td>EMNLP</td>
+                                                    <td>2020</td>
+                                                    <td><a href="https://github.com/tsujuifu/pytorch_sscr">[Code]</a>
+                                                    </td>
+                                                    <td>GAN, Cross-task consistency</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://link.springer.com/chapter/10.1007/978-3-030-58621-8_6">Open-Edit:
+                                                            Open-Domain Image Manipulation with Open-Vocabulary
+                                                            Instructions</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2020</td>
+                                                    <td><a href="https://github.com/xh-liu/Open-Edit">[Code]</a></td>
+                                                    <td>GAN</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://dl.acm.org/doi/abs/10.1145/3394171.3413551?casa_token=YGOhjBT6lScAAAAA:woqnI_qLRNd-NRF9mMtp3M8U6w1xG-FOAO5hqc0grrVocbSJbmXgJubblMCnOkf5hi-p6OtyJFfk">Sequential
+                                                            Attention GAN for Interactive Image Editing</a></td>
+                                                    <td>MM</td>
+                                                    <td>2020</td>
+                                                    <td>-</td>
+                                                    <td>GAN, Dialog, Sequential Attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper/2020/hash/fae0b27c451c728867a567e8c1bb4e53-Abstract.html">Lightweight
+                                                            generative adversarial networks for text-guided image
+                                                            manipulation</a></td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2020</td>
+                                                    <td><a
+                                                            href="https://github.com/mrlibw/Lightweight-Manipulation">[Code]</a>
+                                                    </td>
+                                                    <td>Light-weight GAN</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content_ICCV_2019/html/El-Nouby_Tell_Draw_and_Repeat_Generating_and_Modifying_Images_Based_on_ICCV_2019_paper.html">Tell,
+                                                            Draw, and Repeat: Generating and Modifying Images Based on
+                                                            Continual Linguistic Instruction</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2019</td>
+                                                    <td><a href="https://github.com/Maluuba/GeNeVA">[Code]</a></td>
+                                                    <td>GAN</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content_cvpr_2018/html/Chen_Language-Based_Image_Editing_CVPR_2018_paper.html">Language-Based
+                                                            Image Editing With Recurrent Attentive Models</a></td>
+                                                    <td>CVPR</td>
+                                                    <td>2018</td>
+                                                    <td><a href="https://github.com/Jianbo-Lab/LBIE">[Code]</a></td>
+                                                    <td>GAN, Recurrent Attention</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://proceedings.neurips.cc/paper/2018/hash/d645920e395fedad7bbbed0eca3fe2e0-Abstract.html">Text-Adaptive
+                                                            Generative Adversarial Networks: Manipulating Images with
+                                                            Natural Language</a></td>
+                                                    <td>NeurIPS</td>
+                                                    <td>2018</td>
+                                                    <td><a href="https://github.com/woozzu/tagan">[Code]</a></td>
+                                                    <td>GAN, simple</td>
+                                                    <td>Image Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://dl.acm.org/doi/10.1145/3672539.3686328">Dreamcrafter:
+                                                            Immersive Editing of 3D Radiance Fields Through Flexible,
+                                                            Generative Inputs and Outputs</a></td>
+                                                    <td>CHI</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>3D Radiance Field editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a
+                                                            href="https://openaccess.thecvf.com/content/ICCV2025/html/Sun_SVG-Head_Hybrid_Surface-Volumetric_Gaussians_for_High-Fidelity_Head_Reconstruction_and_Real-Time_ICCV_2025_paper.html">SVG-Head:
+                                                            Hybrid Surface-Volumetric Gaussians for High-Fidelity Head
+                                                            Reconstruction and Real-Time Editing</a></td>
+                                                    <td>ICCV</td>
+                                                    <td>2025</td>
+                                                    <td><a href="https://github.com/heyy-sun/SVG-Head">[Code]</a></td>
+                                                    <td>head reconstruction and real-time editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2501.04325">Edit as You See:
+                                                            Image-guided Video Editing via Masked Motion Modeling</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>image-guided video editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2502.03997">CAD-Editor: A
+                                                            Locate-then-Infill Framework with Automated Training Data
+                                                            Synthesis for Text-Based CAD Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>Text-Based CAD Editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.00580">MRHaD: Mixed
+                                                            Reality-based Hand-Drawn Map Editing Interface for Mobile
+                                                            Robot Navigation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>mixed reality map editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.15049">ScanEdit:
+                                                            Hierarchically-Guided Functional 3D Scan Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>3D Scan Editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.15681">Vidi: Large
+                                                            Multimodal Models for Video Understanding and Editing</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>video understanding and editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2505.01888">Rethinking Score
+                                                            Distilling Sampling for 3D Editing and Generation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>3D editing and generation</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2506.17450">BlenderFusion:
+                                                            3D-Grounded Visual Editing and Generative Compositing</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>3D visual editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2502.02172">EditIQ: Automated
+                                                            Cinematic Editing of Static Wide-Angle Videos via Dialogue
+                                                            Interpretation and Saliency Cues</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>Automated cinematic editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2502.17258">VideoGrain:
+                                                            Modulating Space-Time Attention for Multi-grained Video
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>multi-grained video editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2504.17828">VEU-Bench: Towards
+                                                            Comprehensive Understanding of Video Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>video editing benchmark</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2508.00299">Controllable
+                                                            Pedestrian Video Editing for Multi-View Driving Scenarios
+                                                            via Motion Sequence</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>pedestrian video editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2507.13586">TexGS-VolVis:
+                                                            Expressive Scene Editing for Volume Visualization via
+                                                            Textured Gaussian Splatting</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2025</td>
+                                                    <td>-</td>
+                                                    <td>Volume Scene Editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.11815">SGEdit: Bridging LLM
+                                                            with Text2Image Generative Model for Scene Graph-based Image
+                                                            Editing</a></td>
+                                                    <td>SIGGRAPH Asia</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/bestzzhang/SGEdit-code">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion, scene graph, image-editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.03335">Audio-Agent:
+                                                            Leveraging LLMs For Audio Generation, Editing and
+                                                            Composition</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Text-to-Audio, Multimodal</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2409.12466">AudioEditor: A
+                                                            Training-Free Diffusion-Based Audio Editing Framework</a>
+                                                    </td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/NKU-HLT/AudioEditor">[Code]</a></td>
+                                                    <td>Diffusion-based text-to-audio</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2408.16845">Enabling Local
+                                                            Editing in Diffusion Models by Joint and Individual
+                                                            Component Analysis</a></td>
+                                                    <td>BMVC</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://zelaki.github.io/localdiff/">[Code]</a></td>
+                                                    <td>Diffusion-based local image manipulation</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2408.02434">Steer-by-prior
+                                                            Editing of Symbolic Music Loops</a></td>
+                                                    <td>MML</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://erl-j.github.io/slm-mml-demo/">[Code]</a></td>
+                                                    <td>Masked Language Modelling, music instruments</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.16564">Audio Prompt Adapter:
+                                                            Unleashing Music Editing Abilities for Text-to-Music with
+                                                            Lightweight Finetuning</a></td>
+                                                    <td>ISMIR</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/fundwotsai2001/AP-adapter">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion-based text-to-audio</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2409.14379">GroupDiff:
+                                                            Diffusion-based Group Portrait Editing</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/yumingj/GroupDiff">[Code]</a></td>
+                                                    <td>Diffusion-based image editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.18247">RegionDrag: Fast
+                                                            Region-Based Image Editing with Diffusion Models</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://github.com/Visual-AI/RegionDrag">[Code]</a>
+                                                    </td>
+                                                    <td>Diffusion-based image editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2406.17396">SyncNoise:
+                                                            Geometrically Consistent Noise Prediction for Text-based 3D
+                                                            Scene Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Multi-view consistency</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.11394">DreamCatalyst: Fast
+                                                            and High-Quality 3D Editing via Controlling Editability and
+                                                            Identity Preservation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://dream-catalyst.github.io">[Code]</a></td>
+                                                    <td>Diffusion-based editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.13220">MEDIC: Zero-shot
+                                                            Music Editing with Disentangled Inversion Control</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Audio editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.10102">3DEgo: 3D Editing on
+                                                            the Go!</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2024</td>
+                                                    <td><a href="https://3dego.github.io/">[Code]</a></td>
+                                                    <td>Monocular 3D Scene Synthesis</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.15270">MedEdit:
+                                                            Counterfactual Diffusion-based Image Editing on Brain
+                                                            MRI</a></td>
+                                                    <td>SASHIMI</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Biomedical editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2407.17850">FlexiEdit:
+                                                            Frequency-Aware Latent Refinement for Enhanced Non-Rigid
+                                                            Editing</a></td>
+                                                    <td>ECCV</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Image editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2409.12024">LEMON: Localized
+                                                            Editing with Mesh Optimization and Neural Shaders</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Mesh editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2306.00219">Diffusion Brush: A
+                                                            Latent Diffusion Model-based Editing Tool for AI-generated
+                                                            Images</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Image editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.00313">Streamlining Image
+                                                            Editing with Layered Diffusion Brushes</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Image editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2405.04007">SEED-Data-Edit
+                                                            Technical Report: A Hybrid Dataset for Instructional Image
+                                                            Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://huggingface.co/datasets/AILab-CVC/SEED-Data-Edit">[Code]</a>
+                                                    </td>
+                                                    <td>Image Editing Dataset</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.18622">Environment Maps
+                                                            Editing using Inverse Rendering and Adversarial Implicit
+                                                            Functions</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Inverse rendering, HDR editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2410.21789">HairDiffusion: Vivid
+                                                            Multi-Colored Hair Editing via Latent Diffusion</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Hair editing, Diffusion models</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2411.01819">DiffuMask-Editor: A
+                                                            Novel Paradigm of Integration Between the Segmentation
+                                                            Diffusion Model and Image Editing to Improve Segmentation
+                                                            Ability</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Synthetic Data Generation</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2411.04746">Taming Rectified Flow
+                                                            for Inversion and Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td><a
+                                                            href="https://github.com/wangjiangshan0725/RF-Solver-Edit">[Code]</a>
+                                                    </td>
+                                                    <td>Image Inversion</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2411.16819">Pathways on the Image
+                                                            Manifold: Image Editing via Video Generation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>video-based editing, Frame2Frame, Temporal Editing Caption</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.06592">PrEditor3D: Fast and
+                                                            Precise 3D Shape Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>3D shape editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.07984">Diffusion-Based
+                                                            Attention Warping for Consistent 3D Scene Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>3D scene editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.12877">MIVE: New Design and
+                                                            Benchmark for Multi-Instance Video Editing</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Multi-Instance Video Editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.19458">DriveEditor: A
+                                                            Unified 3D Information-Guided Framework for Controllable
+                                                            Object Editing in Driving Scenes</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>3D object editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.19978">MAKIMA: Tuning-free
+                                                            Multi-Attribute Open-domain Video Editing via Mask-Guided
+                                                            Attention Modulation</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>Multi-Attribute Video Editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><a href="https://arxiv.org/abs/2412.11520">EditSplat: Multi-View
+                                                            Fusion and Attention-Guided Optimization for View-Consistent
+                                                            3D Scene Editing with 3D Gaussian Splatting</a></td>
+                                                    <td>arXiv</td>
+                                                    <td>2024</td>
+                                                    <td>-</td>
+                                                    <td>3D scene editing</td>
+                                                    <td>Media Editing</td>
+                                                </tr>
+                                                <!-- TABLE_CONTENT_END -->
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="subTitle">
+                                        III. Citations
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item" style="padding-top: 10px;">
+                                        <span><b>Source:</b></span> <a target="_blank"
+                                            href="https://github.com/tamlhp/awesome-instruction-editing">https://github.com/tamlhp/awesome-instruction-editing</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="item" style="padding-top: 10px;">
+                                        <span><b>Paper:&nbsp;&nbsp;</b></span> <a target="_blank"
+                                            href="https://doi.org/10.1016/j.engappai.2025.112953">https://doi.org/10.1016/j.engappai.2025.112953</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="25"> </td>
+                    </tr>
+                    <tr height="20px">
+                        <td>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#CCCCCC">
+                        <td height="1px" colspan="3" style="padding:0px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" height="1px" width="757" colspan="3" bgcolor="#FFFFFF"
+                            style="padding:0px; margin-top: 0px;">
+                            <font color="#e2ebfe" face="Tahoma" style="FONT-SIZE: 8pt">
+                                <b>
+                                    <font color="#666666">© 2026
+                                        Instruction Editing </font>
+                                </b>
+                            </font>&nbsp;
+                        </td>
+                    </tr>
+                    <tr bgcolor="#CCCCCC">
+                        <td height="10px" colspan="3" style="padding:0px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <a href="https://info.flagcounter.com/h0WX"><img
+            src="https://s01.flagcounter.com/count2/h0WX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter" border="0"></a>
+</BODY>
+
+</html>
